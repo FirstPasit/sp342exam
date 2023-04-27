@@ -9,9 +9,9 @@ function checkNID() {
 
 function checkTicketNo() {
   let num = (document.getElementById("ticknum").value).trim();
-  if (isNaN(num) >= 1 && isNaN(num) < 6) {
+  if (isNaN(num)) {
     return false;
-  } else {
+  } else if (num >= 1 && num <6) {
 	return true;
   }
 }
